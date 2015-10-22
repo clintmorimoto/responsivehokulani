@@ -1,0 +1,41 @@
+body {
+  padding-top: 0px;  /* Move body of page below navbar. */
+  background-color: beige;
+
+}
+
+.page-content {
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#page_pic_home {
+  background-image: url('hokulani.jpe');
+}
+.headerimg {
+  padding: 0;
+  background-size: cover;
+  background-color: #000;
+  height: 200px;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.navbar-inverse {
+  background-color: #3285EF;
+  color: #EADF35;
+  font-family: Open Sans, sans serif;
+  float: left;
+  text-align: center;
+  width: 8em;
+}
+
+.navbar-brand {
+  color: #EADF35;
+}
