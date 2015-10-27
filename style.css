@@ -1,41 +1,62 @@
 body {
   padding-top: 0px;  /* Move body of page below navbar. */
-  background-color: beige;
-
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: white;
 }
 
-.page-content {
-  padding: 10px;
-  text-align: center;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
-}
-
-#page_pic_home {
+/*
+The typical way we put an image fixed to the top of a page:
+*/
+.header-image {
   background-image: url('hokulani.jpe');
-}
-.headerimg {
-  padding: 0;
   background-size: cover;
-  background-color: #000;
   height: 200px;
-  background-position: center 0;
-  background-repeat: no-repeat;
 }
 
 .navbar-inverse {
   background-color: #3285EF;
-  color: #EADF35;
-  font-family: Open Sans, sans serif;
-  float: left;
-  text-align: center;
-  width: 8em;
+  border-color: #3285EF;
 }
 
-.navbar-brand {
-  color: #EADF35;
+.navbar-inverse .navbar-nav>li>a {
+  color: #FFE322;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.well {
+  color: white;
+  background-color: #3285EF;
+  border-color: #3285EF;
+}
+
+h1 {
+  color: #FFE322;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h2 {
+  color: #FFE322;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*Add the Knight Pride image to the middle column. Use height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center.*/
+.knight-img {
+  background-image: url('excellence.jpe');
+  height: 400px;
+  backgorund-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

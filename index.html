@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html>
+
+<!--
+Create a GitHub repo and an IntelliJ project called “responsivehokulani”. It should include four files: index.html, style.css, banner.jpeg, and excellence.jpeg.
+
+You probably want to base your solution on the code you developed for your Responsive Castle High School practice WOD. If you didn’t do that WOD, then you might want to base it on the bootstrap-example-intro basic project.
+
+The top of the page should contain the banner image. Use background-size: cover, and height: 200px.
+
+The navbar and well background colors should match the blue color in the banner image. The navbar text and headers should match the yellow color in the banner image. Body text and background should be white.
+
+The navbar entries should match those in the live site.
+
+Use Open Sans as the font.
+
+All three columns are of equal size.
+
+The left and right columns should contain links to two items each. The center column contains some text and the excellence image.
+
+Commit your branch to GitHub. Check to make sure it is present there.
+
+Display your finished page in your browser.
+
+Raise your hand to indicate you are done with the WOD.
+
+When you are done, leave your laptop and go hang out in lounge area. Remember: inside voices!
+
+Refer to the mockup image for header and body text content.
+-->
+
 <head>
-<title>Hello</title>
+<title>Responsive Castle High</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--  Load bootstrap.-->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
 
 <!--  Load site-specific customizations after bootstrap. -->
 <link rel="stylesheet" href="style.css">
@@ -17,11 +48,7 @@
 </head>
 <body>
 
-
-  <div class="headerimg" id="page_pic_home">
-
-  </div>
-
+  <div class="header-image"></div>
 
   <!-- Responsive navbar -->
   <div class="navbar navbar-inverse" role="navigation">
@@ -32,40 +59,49 @@
           <!--  Display three horizontal lines when navbar collapsed. -->
           <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"></a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Welcome</a></li>
+          <li><a href="#">Academics</a></li>
+          <li><a href="#faculty">Students</a></li>
+          <li><a href="#alumnni">Parents</a></li>
+          <li><a href="#contact">Faculty</a></li>
+          <li><a href="#contact">Staff</a></li>
         </ul>
       </div>
     </div>
   </div>
-
+  
+  <!--Three columns...-->
   <div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="well">
-        <h2><a name="IE"></a>Announcements</h2>
-
+    <div class="row">
+      <div class="col-md-4">
+        <div class="well">
+          <h1>Announcements</h1>
+          <ul>
+            <li><a href="#">Calendar of School Year</a></li>
+            <li><a href="#">2013-2014 Activity Calendar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 hidden-xs">
+        <div class="well">
+          <h1>Hokulani Pride</h1>
+          Have a great year, young little brains!
+            <div class="knight-img"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h1>Supply Lists</h1>
+          <ul>
+            <li><a href="#">Kindergarten</a></li>
+            <li><a href="#">Grades 1-5</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="well">
-        <h2><a name="Firefox"></a>Hokulani Pride</h2>
-
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-        <h2><a name="Chrome"></a>Supply Lists</h2>
-
-      </div>
-    </div>
-  </div>
-
   </div>
 
   <!-- Load Bootstrap JavaScript components -->
